@@ -1,55 +1,44 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: N/A -> 1.0.0
+Added sections: All principles and sections based on user requirements
+Removed sections: Template placeholders
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ⚠ pending
+  - .specify/templates/spec-template.md: ⚠ pending
+  - .specify/templates/tasks-template.md: ⚠ pending
+  - .specify/templates/commands/*.md: ⚠ pending
+Follow-up TODOs:
+  - RATIFICATION_DATE: Set actual ratification date
+-->
+# Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Educational Content Quality
+All content must be educational, clear, with learning objectives, code examples, diagrams, and hands-on exercises; Ensure high-quality with accurate technical details and proper citations for tools (ROS 2, Gazebo, Unity, NVIDIA Isaac Sim/ROS, Nav2, OpenAI Whisper, LLMs)
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Docusaurus-Based Structure
+Use Docusaurus v3+ for static site generation with Markdown/MDX content, React components for interactive elements (e.g., code snippets, diagrams); Structure as a multi-module course: Overview + 4 Modules (The Robotic Nervous System with ROS 2, The Digital Twin with Gazebo/Unity, The AI-Robot Brain with NVIDIA Isaac, Vision-Language-Action with LLMs)
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Technical Accuracy and Non-Hallucination
+No hallucinations: Stick to provided course outline; All technical details must be accurate and verifiable; Content must follow the specific modules and tools mentioned in the course outline
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Modularity and Version Control
+Prioritize modularity, version control, and easy updates; Content organized in clear modules that can be updated independently; Use Git for version control of all educational materials
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Professional Tone and Accessibility
+All content in English, professional tone suitable for students applying AI to robotics; Content must be accessible and educational, with clear learning objectives for each section
 
-### [PRINCIPLE_6_NAME]
+### Deployment and Distribution
+Deploy to GitHub Pages via gh-pages branch; Ensure all content is properly built and published for online access
 
+## Technology Stack Requirements
+Docusaurus v3+, Markdown/MDX content, React components, GitHub Pages deployment, ROS 2, Gazebo, Unity, NVIDIA Isaac Sim/ROS, Nav2, OpenAI Whisper, LLMs
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow
+Content creation follows structured approach with learning objectives, code examples, diagrams, and hands-on exercises; All content must be reviewed for technical accuracy before merging; Include Capstone Project in Module 4 as specified
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution governs all content creation and development for the Physical AI & Humanoid Robotics educational book; All contributions must comply with these principles; Amendments require documentation and approval; Content must maintain educational focus and technical accuracy
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): Set actual ratification date | **Last Amended**: 2025-12-25
